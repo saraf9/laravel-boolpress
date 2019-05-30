@@ -4,5 +4,116 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+body{
+  background: lightgrey;
+
+
+  header{
+
+    h1{
+
+      color:darkblue;
+      font-size: 50px;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+
+    }
+  }
+
+  .wrapper{
+
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin:auto;
+    width:1400px;
+
+    .post-box{
+
+      width:200px;
+      height:250px;
+
+      border-radius: 10px;
+      margin:20px 10px;
+      background-color: darkgrey;
+      border:2px solid black;
+      text-align: center;
+      position: relative;
+
+      h3{
+
+        text-transform: uppercase;
+        padding-bottom:10px;
+
+      }
+
+      .category{
+        a{
+
+          text-decoration: none;
+          color:dimgray;
+
+          &:hover{
+            color:black;
+          }
+        }
+
+      }
+
+      .updated_at{
+
+        border:1px solid grey;
+        position:absolute;
+        bottom:15px;
+        left:35px;
+      }
+
+    }
+
+    .big-post{
+
+      .post-title{
+
+        color:deepskyblue;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom:30px;
+      }
+
+      .post-content{
+
+        width:400px;
+        text-align: center;
+        font-size: 30px;
+        border:1px solid deepskyblue;
+        padding:20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px ;
+
+      }
+    }
+  }
+
+  .category-name{
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size:40px;
+    color:dimgray;
+  }
+
+
+  footer{
+
+    h5{
+
+      text-align: center;
+    }
+  }
+}
