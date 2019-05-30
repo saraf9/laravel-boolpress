@@ -18,5 +18,8 @@
     </div>
   @endforeach
 </div>
+<div class="create">
+  <a href="{{ route('createnewpost')}}">CREATE A NEW POST</a>
+</div>
 
 @stop
