@@ -37,7 +37,7 @@ body{
     .post-box{
 
       width:200px;
-      height:250px;
+      height:270px;
 
       border-radius: 10px;
       margin:20px 10px;
@@ -51,6 +51,11 @@ body{
         text-transform: uppercase;
         padding-bottom:10px;
 
+        a{
+
+          text-decoration: none;
+          color:darkblue;
+        }
       }
 
       .category{
@@ -74,6 +79,17 @@ body{
         left:35px;
       }
 
+      .edit-post{
+
+        position:absolute;
+        bottom:65px;
+        left:70px;
+
+        a{
+          color:darkred;
+          text-decoration: none;
+        }
+      }
     }
 
     .big-post{

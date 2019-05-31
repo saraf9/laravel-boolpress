@@ -24,8 +24,29 @@ class AdminController extends Controller
       $post = Post::create($validatedData);
       $categoriesId = $validatedData['categories'];
       $categories = Category::find($categoriesId);
-      
+
       $post -> categories() -> attach($categories);
+
+      return redirect('/');
+    }
+
+
+    function editPost($id){
+
+      $post = Post::findOrFail($id);
+      $categories = Category::all();
+      return view("page.edit", compact('post','categories'));
+    }
+
+    function updatePost(PostRequest $request, $id){
+
+      $validatedData = $request -> validated();
+
+      $post = Post::create($validatedData);
+      $categoriesId = $validatedData['categories'];
+      $categories = Category::find($categoriesId);
+
+      $post -> categories() -> sync($categories);
 
       return redirect('/');
     }

@@ -15,6 +15,7 @@
         @endforeach
         <br>
       <div class="updated_at">Updated at: <br> {{ $post -> updated_at }}</div>
+      <div class="edit-post"><a href="{{ route('editpost', $post -> id )}}">EDIT POST</a></div>
     </div>
   @endforeach
 </div>
