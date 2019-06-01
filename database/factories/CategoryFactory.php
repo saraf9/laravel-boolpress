@@ -7,8 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Category::class, function (Faker $faker) {
     return [
-        'name'=> $faker->unique()->word(3),
-        'description'=> $faker->sentence(15)
 
+      'name' => $faker->unique()->word(3),
+      'description' => $faker->sentence(15)
     ];
 });

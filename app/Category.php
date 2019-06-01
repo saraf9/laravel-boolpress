@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-  protected $fillable = [
+  protected $fillable =[
 
-          'name',
-          'description'
+    'name',
+    'description',
   ];
 
   function posts(){

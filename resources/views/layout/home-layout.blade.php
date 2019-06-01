@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans+Narrow&display=swap" rel="stylesheet">
-  
+
   </head>
   <body>
     <header>
       <h1>Sara's Blog</h1>
     </header>
     @if ($errors->any())
-    <div class="alert alert-danger">
+      <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>

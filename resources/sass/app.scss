@@ -37,14 +37,19 @@ body{
     .post-box{
 
       width:200px;
-      height:270px;
+      height:400px;
+      position: relative;
 
-      border-radius: 10px;
-      margin:20px 10px;
       background-color: darkgrey;
       border:2px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 5px 5px;
+      margin:20px 10px;
+
       text-align: center;
-      position: relative;
+      font-size:18px;
+
+
 
       h3{
 
@@ -59,6 +64,7 @@ body{
       }
 
       .category{
+
         a{
 
           text-decoration: none;
@@ -68,12 +74,14 @@ body{
             color:black;
           }
         }
-
       }
+      .subtitle{
 
+        color:blueviolet;
+        font-weight: 200;
+      }
       .updated_at{
 
-        border:1px solid grey;
         position:absolute;
         bottom:15px;
         left:35px;
@@ -82,7 +90,7 @@ body{
       .edit-post{
 
         position:absolute;
-        bottom:65px;
+        bottom:70px;
         left:70px;
 
         a{
@@ -117,7 +125,7 @@ body{
   .create{
 
     text-align: center;
-    margin: 30px;
+    padding-top:30px;
 
     a{
 
@@ -126,6 +134,7 @@ body{
       text-decoration: none;
     }
   }
+
   .category-name{
 
     text-transform: uppercase;
@@ -164,7 +173,33 @@ body{
     }
   }
 
+  .search{
 
+
+
+    .title{
+
+      color:darkred;
+      text-align: center;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size:35px;
+      padding:50px 0;
+    }
+
+    form{
+
+      display: flex;
+      justify-content: center;
+      padding-bottom:40px;
+      font-size:18px;
+
+      .form-group{
+
+        padding:5px 20px;
+
+      }
+    }
+  }
   footer{
 
     h5{

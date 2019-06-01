@@ -24,13 +24,15 @@ body .wrapper {
 
 body .wrapper .post-box {
   width: 200px;
-  height: 270px;
-  border-radius: 10px;
-  margin: 20px 10px;
+  height: 400px;
+  position: relative;
   background-color: darkgrey;
   border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px;
+  margin: 20px 10px;
   text-align: center;
-  position: relative;
+  font-size: 18px;
 }
 
 body .wrapper .post-box h3 {
@@ -52,8 +54,12 @@ body .wrapper .post-box .category a:hover {
   color: black;
 }
 
+body .wrapper .post-box .subtitle {
+  color: blueviolet;
+  font-weight: 200;
+}
+
 body .wrapper .post-box .updated_at {
-  border: 1px solid grey;
   position: absolute;
   bottom: 15px;
   left: 35px;
@@ -61,7 +67,7 @@ body .wrapper .post-box .updated_at {
 
 body .wrapper .post-box .edit-post {
   position: absolute;
-  bottom: 65px;
+  bottom: 70px;
   left: 70px;
 }
 
@@ -88,7 +94,7 @@ body .wrapper .big-post .post-content {
 
 body .create {
   text-align: center;
-  margin: 30px;
+  padding-top: 30px;
 }
 
 body .create a {
@@ -125,6 +131,25 @@ body .edit-wrapper form .form-group label {
 
 body .edit-wrapper form .form-group input {
   text-align: left;
+}
+
+body .search .title {
+  color: darkred;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 35px;
+  padding: 50px 0;
+}
+
+body .search form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+body .search form .form-group {
+  padding: 5px 20px;
 }
 
 body footer h5 {
