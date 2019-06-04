@@ -19,10 +19,17 @@ Laravel, PHP, PhpMyAdmin, MySQL, SASS
 ## Screenshots
 
 <hr></hr>
+
 ![](scr_boolpress.png)
+
 <hr></hr>
+
 ![](scr_boolpress1.png)
+
 <hr></hr>
+
 ![](scr_boolpress2.png)
+
 <hr></hr>
+
 ![](scr_boolpress3.png)
